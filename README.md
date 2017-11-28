@@ -25,10 +25,10 @@ Instructions :
 Images : 
 
 
-![Finished Product](https://imgur.com/QHwhLrr)
+![Finished Product](https://i.imgur.com/QHwhLrr.jpg)
 
-![GPIO and Relay Layout](https://imgur.com/HqlKxyw)
+![GPIO and Relay Layout](https://i.imgur.com/HqlKxyw.jpg)
 
-![IFTTT Applet Recipie](https://imgur.com/wWyx5RH)
+![IFTTT Applet Recipie](https://i.imgur.com/wWyx5RH.png)
 
-![Using My Voice to Open!](https://imgur.com/KPEASWy)
+![Using My Voice to Open!](https://i.imgur.com/KPEASWy.png)
