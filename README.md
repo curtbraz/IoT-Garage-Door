@@ -21,3 +21,14 @@ Instructions :
 7) Create an IFTTT.com Applet for Google Assistant With an Outgoing Webhook (GET Request) as Pictured Below, Using your URL (http://YOUR-PUBLIC-IP/API.php?Token=YOUR-GUID-HERE)
 
 8) Say "Ok Google, Open the Garage Door" From Anywhere in the Wold :)
+
+Images : 
+
+
+![Finished Product](https://imgur.com/QHwhLrr)
+
+![GPIO and Relay Layout](https://imgur.com/HqlKxyw)
+
+![IFTTT Applet Recipie](https://imgur.com/wWyx5RH)
+
+![Using My Voice to Open!](https://imgur.com/KPEASWy)
