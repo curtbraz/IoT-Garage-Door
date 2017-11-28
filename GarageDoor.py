@@ -11,7 +11,7 @@ pin = 17
 GPIO.setup(pin, GPIO.OUT)
 GPIO.output(pin, GPIO.HIGH)
 
-# Time in Seconds for Door to Open / Close
+# Set Time in Seconds for Door to Open / Close
 DoorTimeToClose = 12
 
 # Initiate Door Toggle
