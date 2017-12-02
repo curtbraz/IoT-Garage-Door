@@ -1,7 +1,9 @@
 # IoT-Garage-Door
 Retrofit Any Existing Garage Door Motor Into a Google Voice / Alexa Internet Enabled Smart Door Opener
 
-I thought it would be fun to get into the Home Automation space and create an Internet Connected Smart Garage Door Opener for my very old garage door.  I only own one remote, and the range is awful.  I wanted to be able to leverage my Google Home Mini or my Android via Google Assistant to open and close the door anywhere in the world.  Since I don't have the money to buy a new smart garage door motor, I went about creating one myself with an extra Raspberry Pi and a 5v Relay I had laying around.  Here are the steps to recreate!  In a future phase, I'll have a counter implemented to report if the door is currently open or closed for remote use.
+I thought it would be fun to get into the Home Automation space and create an Internet Connected Smart Garage Door Opener for my very old garage door.  I only own one remote, and the range is awful.  I wanted to be able to leverage my Google Home Mini or my Android via Google Assistant to open and close the door anywhere in the world.  Since I don't have the money to buy a new smart garage door motor, I went about creating one myself with an extra Raspberry Pi and a 5v Relay I had laying around.  Here are the steps to recreate!  
+
+There is also DoorStatus.py and MinutesOpen.py which can be used in combination with a magnetic reed switch, as I have setup, to notify when the door is left open for X minutes.  
 
 Instructions : 
 
