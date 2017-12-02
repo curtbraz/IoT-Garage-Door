@@ -8,21 +8,21 @@ There is also DoorStatus.py and MinutesOpen.py which can be used in combination 
 Instructions : 
 
 
-1) Set up a Raspberry Pi with Raspbian (I used a model B, if you use an A you'll want to supply a USB wifi adapter)
+1) Set up a Raspberry Pi with Raspbian (I used a model B, if you use an A you'll want to supply a USB wifi adapter)  You may also consider purchasing a magnetic reed switch if you'd like to know the current status of your garage door (Open/Closed) while remote
 
-2) Make sure Python, PHP, and Apache are Installed
+2) Make sure Python (& Modules), PHP, MySQL, and Apache are Installed
 
-3) Deploy API.php and GarageDoor.py to /var/www/html/ and Make Sure They are Executable (chmod +x)
+3) Deploy all Files to /var/www/html/ and Make Sure They are Executable (chmod +x)  For optional Door Status alerting, import the MySQL Dump File and Set up Cron
 
 4) Generate a Unique GUID/Token (cat /proc/sys/kernel/random/uuid) and Add to "Token" Variable in index.php
 
-5) Set up Relay and GPIO as Pictured in Screenshot Below (I used Pin 17, So if You Choose Something Else Update the "Pin" Variable in GarageDoor.py)
+5) Set up Relay, Switch, and Pi's GPIO as Pictured in Screenshot Below (I used Pin 17 for the Relay and 23 for the Switch, So if You Choose Something Else Update the "Pin" Variable in GarageDoor.py and DoorStatus.py)
 
 6) Port Forward Your Router to Make Your Pi on TCP 80 Accessible to the Internet
 
-7) Create an IFTTT.com Applet for Google Assistant With an Outgoing Webhook (GET Request) as Pictured Below, Using your URL (http://YOUR-PUBLIC-IP/API.php?Token=YOUR-GUID-HERE)
+7) Create an IFTTT.com Applet for Google Assistant With an Outgoing Webhook (GET Request) as Pictured Below, Using your URL (http://YOUR-PUBLIC-IP/API.php?Token=YOUR-GUID-HERE).  Similarly, create an Incoming Webhook for the Magnetic Reed Switch to get an SMS when the door is left open for X minutes.  You can optionally have the script run GarageDoor.py instead to close it automagically.
 
-8) Say "Ok Google, Open the Garage Door" From Anywhere in the Wold :)
+8) Say "Ok Google, Open the Garage Door" From Anywhere in the World :)  Phase 2 May Include Leveraging the MySQL DB to Display a History of Open / Closed Times and Durations from a Web Browser, as Well as Provide a Visual Button to Click for Triggering the Door.
 
 Images : 
 
