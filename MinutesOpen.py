@@ -23,4 +23,4 @@ finally:
 print Minutes
 
 if Minutes > 9:
-        urllib2.urlopen('https://maker.ifttt.com/trigger/Garage_Left_Open/with/key/dwBlWGTHtU6ZVXpY-olur6').read()
+        urllib2.urlopen('https://maker.ifttt.com/trigger/Garage_Left_Open/with/key/YOUR-IFTTT-INCOMING-WEBHOOK').read()
