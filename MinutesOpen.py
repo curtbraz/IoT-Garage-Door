@@ -5,7 +5,7 @@ import urllib2
 # Connect to the database
 connection = pymysql.connect(host='localhost',
                              user='root',
-                             password='NX1126236bb',
+                             password='',
                              db='GarageDoor',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
