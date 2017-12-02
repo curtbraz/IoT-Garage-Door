@@ -1,11 +1,11 @@
 #!/usr/bin/python
 import pymysql.cursors
-import requests
+import urllib2
 
 # Connect to the database
 connection = pymysql.connect(host='localhost',
                              user='root',
-                             password='',
+                             password='NX1126236bb',
                              db='GarageDoor',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
@@ -23,5 +23,4 @@ finally:
 print Minutes
 
 if Minutes > 9:
-        r = requests.get('https://maker.ifttt.com/trigger/Garage_Left_Open/with/key/YOUR_IFTTT_INCOMING_WEBOOK)
-        r.json()
+        urllib2.urlopen('https://maker.ifttt.com/trigger/Garage_Left_Open/with/key/dwBlWGTHtU6ZVXpY-olur6').read()
