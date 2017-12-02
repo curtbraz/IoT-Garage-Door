@@ -31,6 +31,8 @@ Images :
 
 ![GPIO and Relay Layout](https://i.imgur.com/HqlKxyw.jpg)
 
+![Magnetic Reed Switch](https://i.imgur.com/AotSXBc.png)
+
 ![IFTTT Applet Recipie](https://i.imgur.com/wWyx5RH.png)
 
 ![Using My Voice to Open!](https://i.imgur.com/KPEASWy.png)
