@@ -20,6 +20,6 @@ try:
 finally:
     connection.close()
 
-# If the Door Was Open 10 or More Minutes, Trigger IFTTT SMS Text Message via Webhook Request
-if Minutes > 9:
+# If the Door Was Open 10, 20, or 30 Minutes, Trigger IFTTT SMS Text Message via Webhook Request
+if Minutes = 10 or Minutes = 20 or Minutes = 30:
         urllib2.urlopen('https://maker.ifttt.com/trigger/Garage_Left_Open/with/key/YOUR-IFTTT-INCOMING-WEBHOOK').read()
