@@ -34,3 +34,5 @@ Images :
 ![IFTTT Applet Recipie](https://i.imgur.com/wWyx5RH.png)
 
 ![Using My Voice to Open!](https://i.imgur.com/KPEASWy.png)
+
+![Accidentally Lef the Door Open](https://i.imgur.com/6CLw2tI.png)
