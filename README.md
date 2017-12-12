@@ -5,7 +5,7 @@ I thought it would be fun to get into the Home Automation space and create an In
 
 There is also DoorStatus.py and MinutesOpen.py which can be used in combination with a magnetic reed switch, as I have setup, to notify when the door is left open for X minutes.  
 
-Instructions : 
+# Instructions : 
 
 
 1) Set up a Raspberry Pi with Raspbian (I used a model B, if you use an A you'll want to supply a USB wifi adapter)  You may also consider purchasing a magnetic reed switch if you'd like to know the current status of your garage door (Open/Closed) while remote
@@ -24,7 +24,7 @@ Instructions :
 
 8) Say "Ok Google, Open the Garage Door" From Anywhere in the World :)  Phase 2 May Include Leveraging the MySQL DB to Display a History of Open / Closed Times and Durations from a Web Browser, as Well as Provide a Visual Button to Click for Triggering the Door.
 
-Images : 
+# Images : 
 
 
 ![Finished Product](https://i.imgur.com/QHwhLrr.jpg)
