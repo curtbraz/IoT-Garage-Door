@@ -14,7 +14,7 @@ There is also DoorStatus.py and MinutesOpen.py which can be used in combination 
 
 3) Generate a Unique GUID/Token (uuidgen) and Add to "Token" Variable in GarageDoor.py
 
-4) Run `echo "python3 /home/pi/IoT-Garage-Door/GarageDoor.py &" >> /etc/rc.local`
+4) For persistence put `python3 /home/pi/IoT-Garage-Door/GarageDoor.py &` in /etc/rc.local above the "Exit 0" line
 
 5) Set up Relay, Switch, and Pi's GPIO as Pictured in Screenshot Below (I used Pin 17 for the Relay and 23 for the Switch, So if You Choose Something Else Update the "Pin" Variable in GarageDoor.py and DoorStatus.py)
 
