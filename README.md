@@ -14,13 +14,15 @@ There is also DoorStatus.py and MinutesOpen.py which can be used in combination 
 
 3) Generate a Unique GUID/Token (uuidgen) and Add to "Token" Variable in GarageDoor.py
 
-4) Set up Relay, Switch, and Pi's GPIO as Pictured in Screenshot Below (I used Pin 17 for the Relay and 23 for the Switch, So if You Choose Something Else Update the "Pin" Variable in GarageDoor.py and DoorStatus.py)
+4) Run `echo "python3 /home/pi/IoT-Garage-Door/GarageDoor.py &" >> /etc/rc.local`
 
-5) Port Forward Your Router to Make Your Pi on TCP 8000 Accessible to the Internet
+5) Set up Relay, Switch, and Pi's GPIO as Pictured in Screenshot Below (I used Pin 17 for the Relay and 23 for the Switch, So if You Choose Something Else Update the "Pin" Variable in GarageDoor.py and DoorStatus.py)
 
-6) Create an IFTTT.com Applet for Google Assistant With an Outgoing Webhook (POST Request) as Pictured Below, Using your URL (http://YOUR-PUBLIC-IP/?token=YOUR-GUID-HERE).  Similarly, create an Incoming Webhook for the Magnetic Reed Switch to get an SMS when the door is left open for X minutes.  You can optionally have the script run GarageDoor.py instead to close it automagically.
+6) Port Forward Your Router to Make Your Pi on TCP 8000 Accessible to the Internet
 
-7) Say "Ok Google, Open the Garage Door" From Anywhere in the World :)  Phase 2 May Include Leveraging the MySQL DB to Display a History of Open / Closed Times and Durations from a Web Browser, as Well as Provide a Visual Button to Click for Triggering the Door.
+7) Create an IFTTT.com Applet for Google Assistant With an Outgoing Webhook (POST Request) as Pictured Below, Using your URL (http://YOUR-PUBLIC-IP/?token=YOUR-GUID-HERE).  Similarly, create an Incoming Webhook for the Magnetic Reed Switch to get an SMS when the door is left open for X minutes.  You can optionally have the script run GarageDoor.py instead to close it automagically.
+
+8) Say "Ok Google, Open the Garage Door" From Anywhere in the World :)  Phase 2 May Include Leveraging the MySQL DB to Display a History of Open / Closed Times and Durations from a Web Browser, as Well as Provide a Visual Button to Click for Triggering the Door.
 
 # Images : 
 
