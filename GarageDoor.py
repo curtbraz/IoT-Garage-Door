@@ -44,7 +44,8 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             GPIO.cleanup()
         
 httpd = HTTPServer(('0.0.0.0', 8000), SimpleHTTPRequestHandler)
-httpd.socket = ssl.wrap_socket (httpd.socket, 
-        keyfile="/home/pi/CurtBrazKey2.pem", 
-        certfile='/home/pi/CurtBrazCert.pem', server_side=True)
+## UNCOMMENT THE FOLLOWING LINES AND PROVIDE A CERT/KEY FOR ENCRYPTION (HTTPS)!
+#httpd.socket = ssl.wrap_socket (httpd.socket, 
+#        keyfile="/home/pi/CurtBrazKey2.pem", 
+#        certfile='/home/pi/CurtBrazCert.pem', server_side=True)
 httpd.serve_forever()
