@@ -6,15 +6,11 @@ token = "50060667-7fad-4d9d-8b06-8d62a8012fad"
 import json
 import RPi.GPIO as GPIO
 import time
+import ssl
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from io import BytesIO
 
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
-
-#    def do_GET(self):
-#        self.send_response(200)
-#        self.end_headers()
-#        self.wfile.write(b'404 Not Found')
 
     def do_POST(self):
         content_length = int(self.headers['Content-Length'])
@@ -48,4 +44,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             GPIO.cleanup()
         
 httpd = HTTPServer(('0.0.0.0', 8000), SimpleHTTPRequestHandler)
+httpd.socket = ssl.wrap_socket (httpd.socket, 
+        keyfile="/home/pi/CurtBrazKey2.pem", 
+        certfile='/home/pi/CurtBrazCert.pem', server_side=True)
 httpd.serve_forever()
