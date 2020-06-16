@@ -13,10 +13,12 @@ from io import BytesIO
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
     def do_POST(self):
+        self.timeout = 30
         content_length = int(self.headers['Content-Length'])
         body = self.rfile.read(content_length)
         self.send_response(200)
         self.end_headers()
+        self.request.settimeout(30)
         response = BytesIO()
         response.write(body)
         receivedtoken = response.getvalue()
@@ -42,10 +44,9 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
             # Reset
             GPIO.cleanup()
-        
+
 httpd = HTTPServer(('0.0.0.0', 8000), SimpleHTTPRequestHandler)
-## UNCOMMENT THE FOLLOWING LINES AND PROVIDE A CERT/KEY FOR ENCRYPTION (HTTPS)!
-#httpd.socket = ssl.wrap_socket (httpd.socket, 
-#        keyfile="/home/pi/CurtBrazKey2.pem", 
-#        certfile='/home/pi/CurtBrazCert.pem', server_side=True)
+httpd.socket = ssl.wrap_socket (httpd.socket,
+        keyfile="/home/pi/CurtBrazKey2.pem",
+        certfile='/home/pi/CurtBrazCert.pem', server_side=True)
 httpd.serve_forever()
